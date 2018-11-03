@@ -30,6 +30,6 @@ I wrote a simpe code in Keras to explain this process.
 
 # Example
 
-![race](images/race.jpg)
+![race](images/race.png)
 
-![dog](images/dog.jpg)
+![dog](images/dog.png)
