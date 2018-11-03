@@ -32,4 +32,4 @@ I wrote a simpe code in Keras to explain this process.
 
 ![race](images/race.png)
 
-![dog](images/dog.png)
+![dog](images/dog.PNG)
