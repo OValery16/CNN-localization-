@@ -23,3 +23,13 @@ Networks, such as ResNet-50 model, took advantage of GAP layer to minimize overf
 In mid-2016, researchers at MIT demonstrated that CNNs with GAP layers (a.k.a. GAP-CNNs) that have been trained for a classification task can also be used for object localization. That is, a GAP-CNN not only tells us what object is contained in the image - it also tells us where the object is in the image, and through no additional work on our part! The localization is expressed as a heat map (referred to as a class activation map), where the color-coding scheme identifies regions that are relatively important for the GAP-CNN to perform the object identification task. This technique is described in [this paper](https://arxiv.org/pdf/1512.04150.pdf)
 
 ![cam](images/cam.jpg)
+
+# Code
+
+I wrote a simpe code in Keras to explain this process.
+
+# Example
+
+![race](images/race.jpg)
+
+![dog](images/dog.jpg)
