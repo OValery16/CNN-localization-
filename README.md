@@ -2,19 +2,19 @@
 
 For me, Artificial Intelligence is like a passion and I am trying to use it to solve some daily life problems. In this tutorial/project, I want to give some intuitions to the readers about how convolutional neural networks are actually working.
 
-One of the major issues when working with CNN is that how the network is actually learning is not directly exposed. You can only have some insights about how the network is "thinking". The goal is to see what part of the image activate the network neurones.
+One of the major issues when working with CNN is that how the network is actually learning is not directly exposed. You can only have some insights into how the network is "thinking". The goal is to see what part of the image activate the network neurons.
 
 # Global Average Pooling
 
-In the last few years, experts have turned to global average pooling (GAP) layers to minimize overfitting by reducing the total number of parameters in the model. Similar to max pooling layers, GAP layers are used to reduce the spatial dimensions of a three-dimensional tensor. However, GAP layers perform a more extreme type of dimensionality reduction, where a tensor with dimensions h×w×d is reduced in size to have dimensions 1×1×d. GAP layers reduce each h×w feature map to a single number by simply taking the average of all hw values.
+In the last few years, experts have turned to global average pooling (GAP) layers to minimize overfitting by reducing the total number of parameters in the model. Similar to max-pooling layers, GAP layers are used to reduce the spatial dimensions of a three-dimensional tensor. However, GAP layers perform a more extreme type of dimensionality reduction, where a tensor with dimensions h×w×d is reduced in size to have dimensions 1×1×d. GAP layers reduce each h×w feature map to a single number by simply taking the average of all hw values.
 
-In the recent years, reasearch discovers the role of global average pooling (GAP) layers in minimizing overfitting by reducing the total number of parameters in the model. In contrast to max pooling layers, GAP layers takes as input a tensor with dimensions [h,w,d] and reduce it to a vector of dimension [1,1,d]. For some given input hw feature map GAP layers reduces them to the average of all hw values.
+In recent years, research discovers the role of global average pooling (GAP) layers in minimizing overfitting by reducing the total number of parameters in the model. In contrast to max-pooling layers, GAP layers take as input a tensor with dimensions [h,w,d] and reduce it to a vector of dimension [1,1,d]. For some given input hw feature map GAP layers reduces them to the average of all hw values.
 
 ![global average pooling](images/global_average_pooling.png)
 
-# New archtecture
+# New architecture
 
-Networks, such as ResNet-50 model, took advantage of GAP layer to minimize overfitting by reducing the total number of parameters in the model (such as seen on the image). The GAP layer is took reduce the hw dimension and the densely connected layer (following the GAP layer) with a softmax activation function that yields the predicted object classes.
+Networks, such as ResNet-50 model, took advantage of the GAP layer to minimize overfitting by reducing the total number of parameters in the model (such as seen on the image). The GAP layer reduces the hw dimension and the densely connected layer (following the GAP layer) with a softmax activation function that yields the predicted object classes.
 
 ![cnn](images/Global-average-pooling-layer-replacing-the-fully-connected-layers-The-output-layer.png)
 
@@ -26,7 +26,7 @@ In mid-2016, researchers at MIT demonstrated that CNNs with GAP layers (a.k.a. G
 
 # Code
 
-I wrote a simpe code in Keras to explain this process.
+I wrote a simple code in Keras to explain this process.
 
 # Example
 
