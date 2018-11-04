@@ -2,7 +2,7 @@
 
 For me, Artificial Intelligence is like a passion and I am trying to use it to solve some daily life problems. In this tutorial/project, I want to give some intuitions to the readers about how convolutional neural networks are actually working.
 
-One of the major issues when working with CNN is that how the network is actually learning is not directly exposed. You can only have some insights about how the network is thinking.
+One of the major issues when working with CNN is that how the network is actually learning is not directly exposed. You can only have some insights about how the network is "thinking". The goal is to see what part of the image activate the network neurones.
 
 # Global Average Pooling
 
