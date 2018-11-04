@@ -34,6 +34,6 @@ I wrote a simpe code in Keras to explain this process.
 
 ![dog](images/dog.PNG)
 
-![elephant](images/African_Bush_Elephant.jpg)
+![elephant](images/Elephant.jpg)
 
 ![elephant](images/panda.jpg)
